@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_clone_flutter/resources/auth_methods.dart';
-import 'package:instagram_clone_flutter/responsive/mobile_screen_layout.dart';
-import 'package:instagram_clone_flutter/responsive/responsive_layout.dart';
-import 'package:instagram_clone_flutter/responsive/web_screen_layout.dart';
-import 'package:instagram_clone_flutter/screens/signup_screen.dart';
-import 'package:instagram_clone_flutter/utils/colors.dart';
-import 'package:instagram_clone_flutter/utils/global_variable.dart';
-import 'package:instagram_clone_flutter/utils/utils.dart';
-import 'package:instagram_clone_flutter/widgets/text_field_input.dart';
+import 'package:PARTIU/resources/auth_methods.dart';
+import 'package:PARTIU/responsive/mobile_screen_layout.dart';
+import 'package:PARTIU/responsive/responsive_layout.dart';
+import 'package:PARTIU/responsive/web_screen_layout.dart';
+import 'package:PARTIU/screens/signup_screen.dart';
+import 'package:PARTIU/utils/colors.dart';
+import 'package:PARTIU/utils/global_variable.dart';
+import 'package:PARTIU/utils/utils.dart';
+import 'package:PARTIU/widgets/text_field_input.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -72,15 +72,14 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               Flexible(
                 child: Container(),
-                flex: 2,
+                flex: 1,
               ),
-              SvgPicture.asset(
-                'assets/ic_instagram.svg',
-                color: primaryColor,
-                height: 64,
+              Image.asset(
+                'logo.png',
+                height: 300,
               ),
               const SizedBox(
-                height: 64,
+                height: 24,
               ),
               TextFieldInput(
                 hintText: 'Email',
@@ -103,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Container(
                   child: !_isLoading
                       ? const Text(
-                          'Log in',
+                          'Entrar',
                         )
                       : const CircularProgressIndicator(
                           color: primaryColor,
@@ -125,7 +124,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               Flexible(
                 child: Container(),
-                flex: 2,
+                flex: 1,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -149,7 +148,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.symmetric(vertical: 18),
                     ),
                   ),
                 ],

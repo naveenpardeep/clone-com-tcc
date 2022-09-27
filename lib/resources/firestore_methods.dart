@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:instagram_clone_flutter/models/eventos.dart';
-import 'package:instagram_clone_flutter/resources/storage_methods.dart';
+import 'package:PARTIU/models/eventos.dart';
+import 'package:PARTIU/resources/storage_methods.dart';
 import 'package:uuid/uuid.dart';
 
 class FireStoreMethods {
@@ -13,13 +13,14 @@ class FireStoreMethods {
     String uid,
     String username, 
     // String profImage
+    
     ) async {
         String res = "erro";
     try {
-       String photoUrl =
-           await StorageMethods()
-           .uploadImageToStorage('eventos', file, true);
+       String photoUrl = await StorageMethods().uploadImageToStorage('eventos', file, true);
+
       String eventoId = const Uuid().v1(); // creates unique id based on time
+
       Evento evento = Evento(
         descricao: descricao,
         uid: uid,

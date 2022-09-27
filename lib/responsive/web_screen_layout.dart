@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_clone_flutter/utils/colors.dart';
-import 'package:instagram_clone_flutter/utils/global_variable.dart';
+import 'package:PARTIU/utils/colors.dart';
+import 'package:PARTIU/utils/global_variable.dart';
 
 class WebScreenLayout extends StatefulWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
@@ -75,7 +75,7 @@ class _WebScreenLayoutState extends State<WebScreenLayout> {
           ),
           IconButton(
             icon: Icon(
-              Icons.favorite,
+              Icons.map,
               color: _page == 3 ? primaryColor : secondaryColor,
             ),
             onPressed: () => navigationTapped(3),

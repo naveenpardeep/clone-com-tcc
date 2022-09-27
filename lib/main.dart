@@ -2,18 +2,17 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:instagram_clone_flutter/providers/user_provider.dart';
-import 'package:instagram_clone_flutter/responsive/mobile_screen_layout.dart';
-import 'package:instagram_clone_flutter/responsive/responsive_layout.dart';
-import 'package:instagram_clone_flutter/responsive/web_screen_layout.dart';
-import 'package:instagram_clone_flutter/screens/login_screen.dart';
-import 'package:instagram_clone_flutter/utils/colors.dart';
+import 'package:PARTIU/providers/user_provider.dart';
+import 'package:PARTIU/responsive/mobile_screen_layout.dart';
+import 'package:PARTIU/responsive/responsive_layout.dart';
+import 'package:PARTIU/responsive/web_screen_layout.dart';
+import 'package:PARTIU/screens/login_screen.dart';
+import 'package:PARTIU/utils/colors.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // initialise app based on platform- web or mobile
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(

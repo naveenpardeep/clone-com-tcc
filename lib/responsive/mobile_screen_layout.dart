@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:instagram_clone_flutter/utils/colors.dart';
-import 'package:instagram_clone_flutter/utils/global_variable.dart';
+import 'package:PARTIU/utils/colors.dart';
+import 'package:PARTIU/utils/global_variable.dart';
 
 class MobileScreenLayout extends StatefulWidget {
   const MobileScreenLayout({Key? key}) : super(key: key);
@@ -66,13 +66,14 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.add_circle,
+                size: 40,
                 color: (_page == 2) ? primaryColor : secondaryColor,
               ),
               label: '',
               backgroundColor: primaryColor),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.favorite,
+              Icons.map,
               color: (_page == 3) ? primaryColor : secondaryColor,
             ),
             label: '',

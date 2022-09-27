@@ -2,10 +2,10 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:instagram_clone_flutter/providers/user_provider.dart';
-import 'package:instagram_clone_flutter/resources/firestore_methods.dart';
-import 'package:instagram_clone_flutter/utils/colors.dart';
-import 'package:instagram_clone_flutter/utils/utils.dart';
+import 'package:PARTIU/providers/user_provider.dart';
+import 'package:PARTIU/resources/firestore_methods.dart';
+import 'package:PARTIU/utils/colors.dart';
+import 'package:PARTIU/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 class AddEventoScreen extends StatefulWidget {
@@ -39,7 +39,7 @@ class _AddEventoScreenState extends State<AddEventoScreen> {
                 }),
             SimpleDialogOption(
                 padding: const EdgeInsets.all(20),
-                child: const Text('Escollha da galeria'),
+                child: const Text('Escolha da galeria'),
                 onPressed: () async {
                   Navigator.of(context).pop();
                   Uint8List file = await pickImage(ImageSource.gallery);
@@ -133,7 +133,7 @@ class _AddEventoScreenState extends State<AddEventoScreen> {
                 onPressed: clearImage,
               ),
               title: const Text(
-                'Post to',
+                'Criar evento',
               ),
               centerTitle: false,
               actions: <Widget>[

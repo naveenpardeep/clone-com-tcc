@@ -25,7 +25,7 @@ class User {
       email: snapshot["email"],
       // photoUrl: snapshot["photoUrl"],
       bio: snapshot["bio"],
-      favoritos: snapshot["favoritos"],
+      favoritos: snapshot["favoritos"] != null ? snapshot["favoritos"] : [],
     );
   }
 

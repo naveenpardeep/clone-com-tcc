@@ -1,15 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:instagram_clone_flutter/resources/auth_methods.dart';
-import 'package:instagram_clone_flutter/resources/firestore_methods.dart';
-import 'package:instagram_clone_flutter/screens/login_screen.dart';
-import 'package:instagram_clone_flutter/utils/colors.dart';
-import 'package:instagram_clone_flutter/utils/utils.dart';
-import 'package:instagram_clone_flutter/widgets/follow_button.dart';
+import 'package:PARTIU/resources/auth_methods.dart';
+import 'package:PARTIU/resources/firestore_methods.dart';
+import 'package:PARTIU/screens/login_screen.dart';
+import 'package:PARTIU/utils/colors.dart';
+import 'package:PARTIU/utils/utils.dart';
+import 'package:PARTIU/widgets/follow_button.dart';
 
 class ProfileScreen extends StatefulWidget {
-  final String uid;
+  final String? uid;
   const ProfileScreen({Key? key, required this.uid}) : super(key: key);
 
   @override
